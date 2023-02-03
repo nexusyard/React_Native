@@ -52,7 +52,9 @@ export const ma = {
         usernameHint: 'तुमचा ईमेल टाका',
         button: 'नोंदणी करा',
         password: 'पासवर्ड',
-        passwordHint: 'तुमचा पासवर्ड टाका',
+        passwordHint: 'तुमचा पासवर्ड टाका.',
+        email: 'ईमेल',
+        emailHint: 'तुमचा ईमेल टाका.',
         invalidCredentials: 'अवैध क्रेडेन्शियल',
         notregister: 'अजून नोंदणी झालेली नाही.',
         regmessage: 'नोंदणी करा.'
@@ -66,9 +68,13 @@ export const ma = {
         button: 'नोंदणी करा',
         password: 'पासवर्ड',
         passwordHint: 'तुमचा पासवर्ड टाका',
+        cpassword: 'confirm पासवर्ड',
+        cpasswordHint: 'तुमचा पासवर्ड टाका',
+        email: 'ईमेल',
+        emailHint: 'तुमचा ईमेल टाका.',
         invalidCredentials: 'अवैध क्रेडेन्शियल',
         alreadysign: 'आधीच नोंदणी झाली आहे.',
-        loginmessage: 'येथे नोंदणी करा.'
+        loginmessage: 'लॉगिन करा.'
     }, 
     setting : {
         header: 'सेटिंग',

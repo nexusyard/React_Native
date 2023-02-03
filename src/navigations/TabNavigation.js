@@ -8,6 +8,7 @@ import StackNavigator from './StackNavigator';
 import About from "../screens/About";
 import Services from "../screens/Services";
 import { string } from "../localization";
+import PaperForm from "../screens/PaperForm";
 
 const TabNavigation = () => {
     const Tab = createBottomTabNavigator();
@@ -26,7 +27,7 @@ const TabNavigation = () => {
                 tabBarIconStyle: { fontSize: 5, marginTop: 10 },
                 tabBarIcon : ({focused, color,size}) => {
                     let icon;
-                    if(route.name === 'Stack'){
+                    if(route.name === 'Home'){
                         icon = focused ? "home" : "home-outline";
                     }
                     else if(route.name === 'About'){
@@ -35,11 +36,14 @@ const TabNavigation = () => {
                     else if(route.name === 'Services'){
                         icon = focused ? "business" : "business-outline";
                     }
+                    else if(route.name === 'Paper'){
+                        icon = focused ? "Paper" : "Paper-outline";
+                    }
                     // console.log(icon)
                     return <Ionicons name={icon} size={size} color={color} />
             }})} >
             <Tab.Screen 
-                name="Stack" 
+                name="Home" 
                 options={{title: string.screens.home}}
                 component={StackNavigator} />
             <Tab.Screen 
@@ -50,6 +54,11 @@ const TabNavigation = () => {
                 name="Services" 
                 options={{title: string.screens.services}}
                 component={Services} />
+
+            <Tab.Screen 
+                name="Paper" 
+                options={{title: 'Paper Form'}} 
+                component={PaperForm} />
         </Tab.Navigator>
     )
 }

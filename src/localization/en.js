@@ -52,6 +52,8 @@ export const en = {
         button: 'Login',
         password: 'Password',
         passwordHint: 'Enter your password',
+        email: 'Email',
+        emailHint: 'Enter your mail',
         invalidCredentials: 'Invalid credentials',
         notregister: 'Not yet registered.',
         regmessage: 'Register now.'
@@ -65,6 +67,10 @@ export const en = {
         button: 'Register',
         password: 'Password',
         passwordHint: 'Enter your password',
+        cpassword: 'Confirm Password',
+        cpasswordHint: 'Enter your confirm password',
+        email: 'Email',
+        emailHint: 'Enter your mail',
         invalidCredentials: 'Invalid credentials',
         alreadysign: 'Already registered.',
         loginmessage: 'Login here.'

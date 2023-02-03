@@ -17,7 +17,7 @@ const RootNavigation = () => {
 
     useEffect( () => {
         string.setLanguage(language);
-    },[])
+    },[language])
     
     return (
         <NavigationContainer>

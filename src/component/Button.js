@@ -3,7 +3,7 @@ const { TouchableOpacity, Text, StyleSheet } = require("react-native")
 export function Button ({title, children, ...rest}) {
     return (
         <TouchableOpacity style={styles.button} {...rest} >
-            <Text style={styles.text}>{title.toUpperCase()}</Text>
+            <Text style={styles.text}>{title?.toUpperCase()}</Text>
         </TouchableOpacity>
     )
 }

@@ -1,4 +1,5 @@
 import React from "react"
+import { I18nManager} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { useSelector } from "react-redux";
@@ -13,6 +14,7 @@ import About from "../screens/About";
 import TabNavigation from "./TabNavigation";
 import ChangeLanguage from "../screens/ChangeLanguage";
 import Setting from "../screens/Setting";
+import InputFields from "../screens/InputFields";
 
 const HomeNavigation = () => {
 
@@ -29,13 +31,13 @@ const HomeNavigation = () => {
                 drawerInactiveTintColor: color.surface,
                 // drawerContentStyle:{backgroundColor: 'black'}, 
                 // drawerContentContainerStyle:{backgroundColor:'black'},
-                drawerStyle: { margin:0, backgroundColor: 'red', color: 'green'},
+                // drawerStyle: { backgroundColor: 'red', color: 'green', width: "80%"},
+                drawerItemStyle: { paddingHorizontal: 5, borderRadius: 0, width: '100%', margin: 0, marginTop: 0, marginLeft:0 },
                 drawerActiveBackgroundColor: 'orange',
-                drawerItemStyle: { width: '100%'},
                 
                 drawerIcon: ({focused, size, color}) => {
                     let icon;
-                    if(route.name === 'Tabs')
+                    if(route.name === 'Home')
                     {
                         icon = focused ? 'home' : 'home-outline'
                     }
@@ -51,17 +53,22 @@ const HomeNavigation = () => {
                     {
                         icon = focused ? 'settings' : 'settings-outline'
                     }
+                    else if(route.name === 'Forms')
+                    {
+                        icon = focused ? 'newspaper' : 'newspaper-outline'
+                    }
                     return <Ionicons name={icon} size={size} color={color} />
                 },
             })}
             >
             <Drawer.Screen 
-                name="Tabs" 
+                name="Home" 
                 component={TabNavigation}
                 options={{ drawerLabelStyle: { color: 'green', width: 100}, title: string.screens.home, drawerLabel: string.screens.home }} />
             <Drawer.Screen name="About" options={{ title: string.screens.about }} component={About} />
             <Drawer.Screen name="ChangeLanguage" options={{ title: string.screens.language }}  component={ChangeLanguage} />
             <Drawer.Screen name="Setting" options={{ title: string.screens.setting }}  component={Setting} />
+            <Drawer.Screen name="Forms" options={{title: 'Forms'}} component={InputFields} />
         </Drawer.Navigator>
     )
 }
