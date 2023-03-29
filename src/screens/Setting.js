@@ -10,7 +10,7 @@ const Setting = () => {
     const color = colors[themeColordata];
 
     return (
-        <View>
+        <View >
             <DrawerHeader title={string.setting.header} />
             {/* <Header /> */}
             <Text> --- Setting ---</Text>

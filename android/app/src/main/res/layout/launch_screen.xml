@@ -2,6 +2,48 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" 
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ImageView android:layout_width="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:src="@drawable/launch_screen" android:scaleType="centerCrop" />
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background" >
+    
+    <ImageView android:layout_width="wrap_content" 
+        android:layout_centerVertical="true" 
+        android:layout_centerHorizontal="true" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/launch_screen" 
+        android:scaleType="centerCrop" />
+
+    <TextView android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true" 
+        android:text="Basic Setup"
+        android:fontFamily="@font/aladdin"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp" >
+    </TextView>
+
+    <TextView android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true" 
+        android:text="MERN STACK"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/darling"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp" >
+    </TextView>
+    
 </RelativeLayout>
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:gravity="center">
+
+</LinearLayout> -->

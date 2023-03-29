@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <!-- <color name="primary_dark" >#FFFFFF</color> -->
+    <!-- <color name="background" >#282c33</color> -->
+    <color name="blue" >#0000FF</color>
+    <color name="gradientstart">#F53803</color>
+    <color name="gradientend">#F5D020</color>
+
+</resources>
